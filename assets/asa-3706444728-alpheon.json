@@ -1,0 +1,27 @@
+{
+  "standard": "arc69",
+  "asa_id": 3706444728,
+  "name": "Alpheon",
+  "unit_name": "ALP",
+  "decimals": 0,
+  "total_supply": 1000000000,
+  "url": "https://alpheon.org",
+  "ecosystem_portal": "https://algo.alpheon.org/",
+  "github_repository": "https://github.com/alpheonadmin-cyber/castalien-algorand-protocol",
+  "logo_svg": "https://raw.githubusercontent.com/alpheonadmin-cyber/castalien-algorand-protocol/main/assets/alpheon-logo.svg",
+  "explorer_url": "https://explorer.perawallet.app/asset/3706444728",
+  "creation_txid": "6QSRL742ZIMNOPX23LHH6XEPPEOBZVFIKAQSXZMDPID7GZZ7F2NA",
+  "creator_address": "WAURKB4IAMDX2HI5ZJK5YP5CXZF43XPLOZSROWWYLD5ZJM3H3FSPCAH6CA",
+  "manager_address": "WAURKB4IAMDX2HI5ZJK5YP5CXZF43XPLOZSROWWYLD5ZJM3H3FSPCAH6CA",
+  "reserve_address": "FGRDXIENOISLCFTP2FRHXH25OJTZNANSXCVTKEFJRWR3NCXPO4PDJTWET4",
+  "description": "Alpheon (ALP) is the primary utility and loyalty reward token of the CASTALIEN AI Oracle & Digital Forest ecosystem on Algorand Mainnet (algo.alpheon.org). Used for daily 4SEEKER attendance rewards (8 ALP/day), Proof-of-Oracle notarization, and 5DEX swaps (1 ALGO = 1,024 ALP).",
+  "properties": {
+    "project": "CASTALIEN Protocol",
+    "category": "AI Oracle & Gamified Loyalty",
+    "network": "Algorand Mainnet",
+    "peg_ratio_per_algo": 1024,
+    "internal_eon_equivalence": "1 ALP = 10 EON",
+    "daily_faucet_url": "https://algo.alpheon.org/C/SEEKER/",
+    "dex_swap_url": "https://algo.alpheon.org/C/DEX/"
+  }
+}

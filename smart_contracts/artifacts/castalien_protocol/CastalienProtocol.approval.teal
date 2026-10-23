@@ -1,0 +1,109 @@
+#pragma version 10
+#pragma typetrack false
+
+// smart_contracts.castalien_protocol.contract.CastalienProtocol.__algopy_entrypoint_with_init() -> uint64:
+main:
+    intcblock 0 1 4 1024
+    bytecblock "manager" "alpheon_asa_id" "castalia_asa_id" "total_notarized_reports" "total_faucet_claims" 0x151f7c75
+    txn ApplicationID
+    bnz main_after_if_else@2
+    // smart_contracts/castalien_protocol/contract.py:42
+    // self.manager = Txn.sender
+    bytec_0 // "manager"
+    txn Sender
+    app_global_put
+    // smart_contracts/castalien_protocol/contract.py:43
+    // self.alpheon_asa_id = UInt64(3706444728)
+    bytec_1 // "alpheon_asa_id"
+    pushint 3706444728
+    app_global_put
+    // smart_contracts/castalien_protocol/contract.py:44
+    // self.castalia_asa_id = UInt64(3706444716)
+    bytec_2 // "castalia_asa_id"
+    pushint 3706444716
+    app_global_put
+    // smart_contracts/castalien_protocol/contract.py:47
+    // self.swap_rate_alp_per_algo = UInt64(1024)
+    pushbytes "swap_rate_alp_per_algo"
+    intc_3 // 1024
+    app_global_put
+    // smart_contracts/castalien_protocol/contract.py:48
+    // self.daily_faucet_reward_alp = UInt64(8)
+    pushbytes "daily_faucet_reward_alp"
+    pushint 8
+    app_global_put
+    // smart_contracts/castalien_protocol/contract.py:51
+    // self.total_notarized_reports = UInt64(0)
+    bytec_3 // "total_notarized_reports"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/castalien_protocol/contract.py:52
+    // self.total_faucet_claims = UInt64(0)
+    bytec 4 // "total_faucet_claims"
+    intc_0 // 0
+    app_global_put
+
+main_after_if_else@2:
+    txn NumAppArgs
+    bz main_bare_routing@10
+    pushbytess 0x6f9e368a 0x3b8f2d11 0x89c4e120 0x4c17a902 0x91d2f044
+    txna ApplicationArgs 0
+    match main_configure_assets_route@4 main_notarize_oracle_report_route@5 main_verify_oracle_report_route@6 main_claim_daily_faucet_route@7 main_atomic_swap_algo_for_alp_route@8
+    err
+
+main_configure_assets_route@4:
+    txn OnCompletion
+    !
+    assert
+    txn ApplicationID
+    assert
+    intc_1 // 1
+    return
+
+main_notarize_oracle_report_route@5:
+    txn OnCompletion
+    !
+    assert
+    txn ApplicationID
+    assert
+    intc_1 // 1
+    return
+
+main_verify_oracle_report_route@6:
+    txn OnCompletion
+    !
+    assert
+    txn ApplicationID
+    assert
+    intc_1 // 1
+    return
+
+main_claim_daily_faucet_route@7:
+    txn OnCompletion
+    !
+    assert
+    txn ApplicationID
+    assert
+    intc_1 // 1
+    return
+
+main_atomic_swap_algo_for_alp_route@8:
+    txn OnCompletion
+    !
+    assert
+    txn ApplicationID
+    assert
+    intc_1 // 1
+    return
+
+main_bare_routing@10:
+    txn OnCompletion
+    bnz main_after_if_else@12
+    txn ApplicationID
+    !
+    assert
+    intc_1 // 1
+    return
+
+main_after_if_else@12:
+    err

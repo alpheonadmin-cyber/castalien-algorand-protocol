@@ -1,0 +1,27 @@
+{
+  "standard": "arc69",
+  "asa_id": 3706444716,
+  "name": "Castalia",
+  "unit_name": "CST",
+  "decimals": 0,
+  "total_supply": 1000000,
+  "url": "https://alpheon.org",
+  "ecosystem_portal": "https://algo.alpheon.org/",
+  "github_repository": "https://github.com/alpheonadmin-cyber/castalien-algorand-protocol",
+  "logo_svg": "https://raw.githubusercontent.com/alpheonadmin-cyber/castalien-algorand-protocol/main/assets/castalia-logo.svg",
+  "explorer_url": "https://explorer.perawallet.app/asset/3706444716",
+  "creation_txid": "EXC3TQNSKVDN5NPX2T32VSMQYFKYESITEF6IL74ROVKVGODFXJTQ",
+  "creator_address": "WAURKB4IAMDX2HI5ZJK5YP5CXZF43XPLOZSROWWYLD5ZJM3H3FSPCAH6CA",
+  "manager_address": "WAURKB4IAMDX2HI5ZJK5YP5CXZF43XPLOZSROWWYLD5ZJM3H3FSPCAH6CA",
+  "reserve_address": "FGRDXIENOISLCFTP2FRHXH25OJTZNANSXCVTKEFJRWR3NCXPO4PDJTWET4",
+  "description": "Castalia (CST) is the high-tier governance and Maester mentorship token of the CASTALIEN Monastery (2WISDOM) and Loyalty Forest (3TREE) on Algorand Mainnet. 1 CST = 1,000 Alpheon (ALP).",
+  "properties": {
+    "project": "CASTALIEN Protocol",
+    "category": "Governance & Monastery Patronage",
+    "network": "Algorand Mainnet",
+    "alpheon_equivalence": "1 CST = 1,000 ALP",
+    "internal_eon_equivalence": "1 CST = 10,000 EON",
+    "monastery_url": "https://algo.alpheon.org/B/2WISDOM/",
+    "tree_forest_url": "https://algo.alpheon.org/C/TREE/"
+  }
+}

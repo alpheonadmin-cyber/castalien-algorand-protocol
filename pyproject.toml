@@ -1,0 +1,38 @@
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "castalien-algorand-protocol"
+version = "1.0.0"
+description = "CASTALIEN Protocol: AI Philosophical Oracle, Gamified Web2.5 Loyalty (3TREE/4SEEKER), and Hybrid DEX on Algorand Mainnet"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "CASTALIEN Core Team", email = "admin@alpheon.org" }
+]
+keywords = ["algorand", "algokit", "ai-oracle", "iching", "saju", "pera-wallet", "asa", "alpheon", "castalia"]
+
+dependencies = [
+    "py-algorand-sdk>=2.6.0",
+    "algokit-utils>=2.3.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "algorand-python>=2.0.0",
+    "puyapy>=2.0.0",
+    "pytest>=8.0.0",
+]
+
+[project.urls]
+Homepage = "https://algo.alpheon.org/"
+Portal = "https://alpheon.org/"
+Repository = "https://github.com/alpheonadmin-cyber/castalien-algorand-protocol"
+Litepaper = "https://github.com/alpheonadmin-cyber/castalien-algorand-protocol/blob/main/docs/LITEPAPER.md"
+Alpheon_ASA = "https://explorer.perawallet.app/asset/3706444728"
+Castalia_ASA = "https://explorer.perawallet.app/asset/3706444716"
+Mainnet_App = "https://explorer.perawallet.app/application/3724012001"

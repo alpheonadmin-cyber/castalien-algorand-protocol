@@ -1,0 +1,68 @@
+{
+  "contract": {
+    "name": "CastalienProtocol",
+    "desc": "ARC-4 Smart Contract powering the CASTALIEN AI Oracle & Loyalty Ecosystem on Algorand Mainnet (https://algo.alpheon.org/).",
+    "methods": [
+      {
+        "name": "configure_assets",
+        "desc": "Opts the smart contract application account into Alpheon (ALP) and Castalia (CST).",
+        "args": [
+          { "name": "alp_asa", "type": "asset" },
+          { "name": "cst_asa", "type": "asset" }
+        ],
+        "returns": { "type": "void" }
+      },
+      {
+        "name": "notarize_oracle_report",
+        "desc": "Anchors a 1KICHING or Astronomical Saju AI consultation report hash on-chain.",
+        "args": [
+          { "name": "report_uuid", "type": "string" },
+          { "name": "service_type", "type": "string" },
+          { "name": "report_sha256", "type": "byte[32]" }
+        ],
+        "returns": { "type": "uint64" }
+      },
+      {
+        "name": "verify_oracle_report",
+        "desc": "Read-only ABI method allowing any user or auditor to verify whether a given AI consultation report matches the immutable SHA-256 digest stored on-chain.",
+        "readonly": true,
+        "args": [
+          { "name": "report_uuid", "type": "string" },
+          { "name": "candidate_sha256", "type": "byte[32]" }
+        ],
+        "returns": { "type": "bool" }
+      },
+      {
+        "name": "claim_daily_faucet",
+        "desc": "Distributes 8 ALP (ASA 3706444728) once every 24 hours (86,400s) to a verified Pera Wallet holder opted into Alpheon.",
+        "args": [
+          { "name": "recipient", "type": "account" }
+        ],
+        "returns": { "type": "uint64" }
+      },
+      {
+        "name": "atomic_swap_algo_for_alp",
+        "desc": "Accepts native ALGO payment (>= 1 ALGO) in an atomic transaction group and instantly settles Alpheon (ALP) at 1 ALGO = 1,024 ALP.",
+        "args": [
+          { "name": "algo_payment", "type": "pay" }
+        ],
+        "returns": { "type": "uint64" }
+      }
+    ],
+    "networks": {
+      "mainnet": {
+        "appID": 3724012001
+      }
+    }
+  },
+  "state": {
+    "global": {
+      "num_uints": 6,
+      "num_byte_slices": 1
+    },
+    "local": {
+      "num_uints": 0,
+      "num_byte_slices": 0
+    }
+  }
+}
